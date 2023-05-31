@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset button */
+button {
+	background-color: transparent;
+	border-width: 0;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	padding: 0;
+}
+
+/* type scale */
+h1, h2, h3, h4, h5, h6, p, button {
+	font-family: 'Roboto';
+}
+h1 {
+	font-size: 6rem;
+	letter-spacing: -0.015625em;
+	font-weight: 300;
+}
+h2 {
+	font-size: 3.75rem;
+	letter-spacing: -0.008333333333333333em;
+	font-weight: 300;
+}
+h3 {
+	font-size: 3rem;
+	letter-spacing: 0em;
+	font-weight: 400;
+}
+h4 {
+	font-size: 2.125rem;
+	letter-spacing: 0.007352941176470588em;
+	font-weight: 400;
+}
+h5 {
+	font-size: 1.5rem;
+	letter-spacing: 0em;
+	font-weight: 400;
+}
+h6 {
+	font-size: 1.25rem;
+	letter-spacing: 0.0075em;
+	font-weight: 500;
+}
+p.body-1 {
+	font-size: 1rem;
+	letter-spacing: 0.03125em;
+	font-weight: 400;
+}
+p.body-2 {
+	font-size: 0.875rem;
+	letter-spacing: 0.017857142857142856em;
+	font-weight: 400;
+}
+p.sub-1 {
+	font-size: 1rem;
+	letter-spacing: 0.009375em;
+	font-weight: 400;
+}
+p.sub-2 {
+	font-size: 0.875rem;
+	letter-spacing: 0.0071428571428571435em;
+	font-weight: 500;
+}
+button {
+	font-size: 0.875rem;
+	letter-spacing: 0.08928571428571429em;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+p.caption {
+	font-size: 0.75rem;
+	letter-spacing: 0.03333333333333333em;
+	font-weight: 400;
+}
+p.overline {
+	font-size: 0.625rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 400;
+}
