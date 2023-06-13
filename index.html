@@ -4,69 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Swat Lasagna</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/component.css">
     <link rel="stylesheet" href="./css/queries.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="app-bars-top">
-        <img src="./assets/svg/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-        <h6>Page title</h6>
-    </div>
-    <button class="contained">button</button>
-    <button class="outlined">button</button>
-    <button class="text">button</button>
-    <div class="card">
-        <img src="https://picsum.photos/id/1011/344/194" alt="">
-        <div class="wrapper">
-            <h6>Card title</h6>
-            <p class="body-2">Secondary text</p>
-            <p class="body-2 supporting-text">Greyhound divisively hello coldly wonderfully marginally far upon excluding.</p>
-        </div>
-        <div class="action">
-            <button class="text">action 1</button>
-            <button class="text">action 2</button>
-        </div>
-    </div>
-    <div style="height: 5rem;"></div>
-    <div class="grid">
-        <div class="card">
-            <img src="https://picsum.photos/id/1011/344/194" alt="">
-            <div class="wrapper">
-                <h6>Card title</h6>
-                <p class="body-2">Secondary text</p>
-                <p class="body-2 supporting-text">Greyhound divisively hello coldly wonderfully marginally far upon excluding.</p>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">
+                <img src="./assets/svg/0-circle.svg" alt="navbar brand icon" class="navbar-brand-icon">
+                <span>Navbar Brand</span>
+            </a>
+            <img src="./assets/svg/list.svg" alt="navbar list icon" class="navbar-toggler">
+            <div class="navbar-collapse">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+                <div style="flex-basis: 100%;"></div>
+                <a href="#" class="nav-link">Register</a>
+                <a href="#" class="nav-link">Login</a>
             </div>
-            <div class="action">
-                <button class="text">action 1</button>
-                <button class="text">action 2</button>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero">
+                <img src="./assets/svg/0-circle.svg" alt="navbar brand icon" class="hero-brand-icon">
+                <h1>Centered hero</h1>
+                <div class="hero-content-container">
+                    <p class="hero-lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="hero-button-container">
+                        <button class="btn">Primary button</button>
+                        <button class="btn secondary">Secondary</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/id/1011/344/194" alt="">
-            <div class="wrapper">
-                <h6>Card title</h6>
-                <p class="body-2">Secondary text</p>
-                <p class="body-2 supporting-text">Greyhound divisively hello coldly wonderfully marginally far upon excluding.</p>
-            </div>
-            <div class="action">
-                <button class="text">action 1</button>
-                <button class="text">action 2</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/id/1011/344/194" alt="">
-            <div class="wrapper">
-                <h6>Card title</h6>
-                <p class="body-2">Secondary text</p>
-                <p class="body-2 supporting-text">Greyhound divisively hello coldly wonderfully marginally far upon excluding.</p>
-            </div>
-            <div class="action">
-                <button class="text">action 1</button>
-                <button class="text">action 2</button>
-            </div>
-        </div>
-    </div>
+        </section>
+
+        <footer>
+            <div class="container footer-grid">
+                <div class="footer-item">
+                    <a href="#" class="footer-brand">
+                        <img src="./assets/svg/0-circle.svg" alt="navbar brand icon" class="footer-brand-icon">
+                    </a>
+                    <p>© 2023</p>
+                </div>
+                <div></div>
+                <div class="footer-item">
+                    <h5>Section</h5>
+                    <a>Home</a>
+                    <a>Features</a>
+                    <a>Pricing</a>
+                    <a>FAQ</a>
+                    <a>About</a>
+                </div>
+                <div class="footer-item">
+                    <h5>Section</h5>
+                    <a>Home</a>
+                    <a>Features</a>
+                    <a>Pricing</a>
+                    <a>FAQ</a>
+                    <a>About</a>
+                </div>
+                <div class="footer-item">
+                    <h5>Section</h5>
+                    <a>Home</a>
+                    <a>Features</a>
+                    <a>Pricing</a>
+                    <a>FAQ</a>
+                    <a>About</a>
+                </div>
+        </footer>
+    </main>
+
+    <script src="./js/navbar-collapse.js" type="text/javascript"></script>
 </body>
 </html>

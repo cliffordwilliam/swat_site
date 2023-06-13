@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+span {
+    line-height: inherit;
+}
+
+a {
+    color: #06f;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.5rem 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: min(calc(1.375rem + 1.5vw), 2.5rem);
+}
+
+h2 {
+    font-size: min(calc(1.325rem + .9vw), 2rem);
+}
+
+h3 {
+    font-size: min(calc(1.3rem + .6vw), 1.75rem);
+}
+
+h4 {
+    font-size: min(calc(1.275rem + .3vw), 1.5rem);
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
