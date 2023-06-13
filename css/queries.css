@@ -2,9 +2,6 @@
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .hero-button-container > button {
-        flex-basis: auto;
-    }
 }
 @media (min-width: 768px){
     .footer-grid {
@@ -20,9 +17,6 @@
         height: 100% !important;
         flex: 1 0 0;
         flex-direction: row;
-    }
-    .hero-content-container {
-        width: 50%;
     }
 }
 @media (min-width: 1200px){
