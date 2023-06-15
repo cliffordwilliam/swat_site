@@ -17,9 +17,9 @@
 }
 
 .btn.secondary {
-    background-color: transparent;
-    border-color: #677;
-    color: #677;
+    background-color: #fff;
+    border-color: #fff;
+    color: #06f;
 } 
 
 .navbar {
@@ -42,11 +42,13 @@
 .navbar-brand-icon {
     height: 1.5em;
     margin-right: 0.25em;
+    display: block;
 }
 
 .navbar-toggler {
     height: 2.5rem;
     cursor: pointer;
+    display: block;
 }
 
 .navbar-collapse {
@@ -73,9 +75,7 @@
 
 .hero-background {
     background-color: #fff;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), 
-                linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-                url("https://hero-generator.netlify.app/qijin-xu.png") center center no-repeat scroll;
+    background: url(../assets/jpg/school-kids.jpg) center center no-repeat scroll;
     background-size: cover;
     overflow: hidden;
     text-align: center;
@@ -90,17 +90,21 @@
 .hero-brand-icon {
     height: 3.5625rem;
     margin-bottom: 1.5rem;
+    filter: invert(1);
+    display: block;
 }
 
 .hero > h1 {
     font-size: min(calc(1.425rem + 2.1vw), 3rem);
     font-weight: 700;
+    color: #fff;
 }
 
 .hero-lead {
     font-size: 1.25rem;
     font-weight: 300;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .hero-button-container {
@@ -108,6 +112,51 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.featured {
+    padding: 3rem 1.5rem;
+}
+
+.featured > h2 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+    gap: 1.5rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.feature-icon-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #06f;
+    border-radius: 0.75rem;
+}
+
+.feature-icon {
+    height: 2em;
+    filter: invert(1);
+    display: block;
+}
+
+.featured-link {
+    display: flex;
+    align-items: center;
+}
+
+.featured-icon {
+    height: 1rem;
+    display: block;
 }
 
 footer {
@@ -118,7 +167,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     padding: 3rem 0.75rem;
-    grid-gap: 1rem 1.5rem;
+    gap: 1rem 1.5rem;
 }
 
 .footer-brand {
@@ -129,11 +178,13 @@ footer {
 
 .footer-brand-icon {
     height: 2rem;
+    display: block;
 }
 
 .footer-item {
     display: flex;
     flex-direction: column;
+    align-items: flex-start
 }
 
 .footer-item > a{
