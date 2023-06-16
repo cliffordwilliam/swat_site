@@ -27,6 +27,7 @@ prevButton.addEventListener("click", function(){
 });
 
 function updateCarousel(transitionClass) {
+    stopAutoplay();
     isTransitioning = true;
     carouselContainer.classList.toggle(transitionClass);
     carouselItems[oldIndex].classList.remove("lead")
@@ -37,4 +38,19 @@ carouselContainer.addEventListener("transitionend", function(){
     isTransitioning = false;
     carouselContainer.classList.remove("slide-left", "slide-right");
     carouselItems[oldIndex].classList.remove("show");
+    startAutoplay();
 });
+
+function startAutoplay() {
+    autoplayInterval = setInterval(() => {
+        oldIndex = currentIndex;
+        currentIndex = (currentIndex + 1) % itemCount;
+        updateCarousel("slide-left");
+    }, 3000);
+}
+
+function stopAutoplay() {
+    clearInterval(autoplayInterval);
+}
+
+startAutoplay();
