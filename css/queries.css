@@ -18,6 +18,9 @@
         flex: 1 0 0;
         flex-direction: row;
     }
+    .nav-link.right {
+        margin-right: auto;
+    }
     .featured-grid {
         grid-template-columns: repeat(3, 1fr);
     }

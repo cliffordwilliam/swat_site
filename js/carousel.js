@@ -6,35 +6,35 @@ const prevButton = document.querySelector('.prev-button');
 let oldIndex = 0;
 let currentIndex = 0;
 const itemCount = carouselItems.length;
+isTransitioning = false
 
 nextButton.addEventListener("click", function(){
-    carouselContainer.style.flexDirection = 'row';
+    if (isTransitioning) {
+        return;
+    }
     oldIndex = currentIndex;
     currentIndex = (currentIndex + 1) % itemCount;
-
-    carouselItems[oldIndex].style.order = '0';
-    carouselItems[currentIndex].style.order = '1';
-
-    carouselItems[currentIndex].classList.add("active");
-    carouselContainer.style.transform = "translateX(-100%)";
-    carouselContainer.style.transition = 'transform .6s ease-in-out';
+    updateCarousel("slide-left");
 });
 
 prevButton.addEventListener("click", function(){
-    carouselContainer.style.flexDirection = 'row-reverse';
+    if (isTransitioning) {
+        return;
+    }
     oldIndex = currentIndex;
     currentIndex = (currentIndex - 1 + itemCount) % itemCount;
-
-    carouselItems[oldIndex].style.order = '0';
-    carouselItems[currentIndex].style.order = '1';
-
-    carouselItems[currentIndex].classList.add("active");
-    carouselContainer.style.transform = "translateX(100%)";
-    carouselContainer.style.transition = 'transform .6s ease-in-out';
+    updateCarousel("slide-right");
 });
 
+function updateCarousel(transitionClass) {
+    isTransitioning = true;
+    carouselContainer.classList.toggle(transitionClass);
+    carouselItems[oldIndex].classList.remove("lead")
+    carouselItems[currentIndex].classList.add("lead", "show");
+}
+
 carouselContainer.addEventListener("transitionend", function(){
-    carouselItems[oldIndex].classList.remove("active");
-    carouselContainer.style.transform = "translateX(0%)";
-    carouselContainer.style.transition = 'none';
+    isTransitioning = false;
+    carouselContainer.classList.remove("slide-left", "slide-right");
+    carouselItems[oldIndex].classList.remove("show");
 });
