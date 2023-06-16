@@ -14,17 +14,20 @@
     <header>
         <nav class="navbar">
             <a href="#" class="navbar-brand">
-                <img src="./assets/svg/0-circle.svg" alt="navbar brand icon" class="navbar-brand-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#06f" viewBox="0 0 16 16">
+                    <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                </svg>
                 <span>Navbar Brand</span>
             </a>
-            <img src="./assets/svg/list.svg" alt="navbar list icon" class="navbar-toggler">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" fill="#000" viewBox="0 0 16 16" class="navbar-toggler">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
             <div class="navbar-collapse">
-                <div style="min-width: 2rem; min-height: 1.25rem;"></div>
                 <a href="#" class="nav-link">Home</a>
                 <a href="#" class="nav-link">Services</a>
                 <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Contact</a>
-                <div style="flex-basis: 100%;"></div>
+                <a href="#" class="nav-link right">Contact</a>
                 <a href="#" class="nav-link">Register</a>
                 <a href="#" class="nav-link">Login</a>
             </div>
@@ -34,7 +37,10 @@
     <main>
         <section class="hero-background">
             <div class="container hero">
-                <img src="./assets/svg/0-circle.svg" alt="navbar brand icon" class="hero-brand-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="3.5625rem" height="3.5625rem" fill="#fff" viewBox="0 0 16 16" class="hero-brand-icon">
+                    <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                </svg>
                 <h1>Centered hero</h1>
                 <p class="hero-lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                 <div class="hero-button-container">
@@ -50,38 +56,69 @@
                 <div class="featured-grid">
                     <div class="feature">
                         <div class="feature-icon-container">
-                            <img src="./assets/svg/0-circle.svg" alt="" class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#fff" viewBox="0 0 16 16">
+                                <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                            </svg>
                         </div>
                         <h2>Featured title</h2>
                         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                         <a href="#" class="featured-link">
                             <span>Call to action</span>
-                            <img src="./assets/svg/chevron-right.svg" alt="" class="featured-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#06f" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
                         </a>
                     </div>
                     <div class="feature">
                         <div class="feature-icon-container">
-                            <img src="./assets/svg/0-circle.svg" alt="" class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#fff" viewBox="0 0 16 16">
+                                <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                            </svg>
                         </div>
                         <h2>Featured title</h2>
                         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                         <a href="#" class="featured-link">
                             <span>Call to action</span>
-                            <img src="./assets/svg/chevron-right.svg" alt="" class="featured-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#06f" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
                         </a>
                     </div>
                     <div class="feature">
                         <div class="feature-icon-container">
-                            <img src="./assets/svg/0-circle.svg" alt="" class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#fff" viewBox="0 0 16 16">
+                                <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                            </svg>
                         </div>
                         <h2>Featured title</h2>
                         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                         <a href="#" class="featured-link">
                             <span>Call to action</span>
-                            <img src="./assets/svg/chevron-right.svg" alt="" class="featured-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#06f" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container carousel">
+                <div class="carousel-container">
+                    <img src="./assets/jpg/1068-800x400.jpg" alt="" width="100%" height="400px" class="carousel-item active">
+                    <img src="./assets/jpg/127-800x400.jpg" alt="" width="100%" height="400px" class="carousel-item">
+                    <img src="./assets/jpg/152-800x400.jpg" alt="" width="100%" height="400px" class="carousel-item">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#fff" viewBox="0 0 16 16" class="prev-button">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#fff" viewBox="0 0 16 16" class="next-button">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
             </div>
         </section>
 
@@ -89,7 +126,10 @@
             <div class="container footer-grid">
                 <div class="footer-item">
                     <a href="#" class="footer-brand">
-                        <img src="./assets/svg/0-circle.svg" alt="navbar brand icon" class="footer-brand-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#000" viewBox="0 0 16 16">
+                            <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                        </svg>
                     </a>
                     <p>© 2023</p>
                 </div>
@@ -122,5 +162,6 @@
     </main>
 
     <script src="./js/navbar-collapse.js" type="text/javascript"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>

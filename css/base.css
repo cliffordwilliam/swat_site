@@ -7,6 +7,10 @@
     font-family: sans-serif;
 }
 
+img, svg {
+    display: block;
+}
+
 span {
     line-height: inherit;
 }

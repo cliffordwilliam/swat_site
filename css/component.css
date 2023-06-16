@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1.25rem 2rem;
 }
 
 .navbar-brand {
@@ -37,18 +38,11 @@
     white-space: nowrap;
     display: flex;
     align-items: center;
-}
-
-.navbar-brand-icon {
-    height: 1.5em;
-    margin-right: 0.25em;
-    display: block;
+    gap: 0 0.5rem;
 }
 
 .navbar-toggler {
-    height: 2.5rem;
     cursor: pointer;
-    display: block;
 }
 
 .navbar-collapse {
@@ -73,6 +67,10 @@
     text-decoration: none;
 }
 
+.nav-link.right {
+    margin-right: auto;
+}
+
 .hero-background {
     background-color: #fff;
     background: url(../assets/jpg/school-kids.jpg) center center no-repeat scroll;
@@ -88,10 +86,7 @@
 }
 
 .hero-brand-icon {
-    height: 3.5625rem;
-    margin-bottom: 1.5rem;
-    filter: invert(1);
-    display: block;
+    margin: 0 auto 1.5rem auto;
 }
 
 .hero > h1 {
@@ -143,20 +138,51 @@
     border-radius: 0.75rem;
 }
 
-.feature-icon {
-    height: 2em;
-    filter: invert(1);
-    display: block;
-}
-
 .featured-link {
     display: flex;
     align-items: center;
+    gap: 0 0.125rem;
 }
 
-.featured-icon {
-    height: 1rem;
+.carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 0;
+}
+
+.carousel-container {
+    display: flex;
+}
+
+.carousel-item {
+    display: none;
+    object-fit: cover;
+    flex: 0 0 100%;
+}
+
+.carousel-item.active {
     display: block;
+}
+
+.prev-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: auto 0;
+    width: 15%;
+    cursor: pointer;
+}
+
+.next-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto 0;
+    width: 15%;
+    cursor: pointer;
 }
 
 footer {
@@ -174,11 +200,6 @@ footer {
     display: block;
     line-height: 0;
     margin-bottom: 1rem;
-}
-
-.footer-brand-icon {
-    height: 2rem;
-    display: block;
 }
 
 .footer-item {

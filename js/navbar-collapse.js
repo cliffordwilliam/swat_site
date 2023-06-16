@@ -10,10 +10,10 @@ navbarToggler.addEventListener("click", function(){
     } else {
         navbarCollapse.style.removeProperty("height");
     }
-})
+});
 
 navbarCollapse.addEventListener("transitionend", function(){
     if (navbarCollapse.offsetHeight === 0) {
         navbarCollapse.classList.remove("show");
     }
-})
+});
