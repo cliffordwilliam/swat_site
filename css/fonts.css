@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'FigTree';
+    src: url('../assets/fonts/figtree_700.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'FigTree';
+    src: url('../assets/fonts/figtree_500.woff2') format('woff2');
+    font-weight: 500;
+ }
+
+@font-face {
+    font-family: 'FigTree';
+    src: url('../assets/fonts/figtree_400.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'FigTree';
+    src: url('../assets/fonts/figtree_400.woff2') format('woff2');
+    font-weight: 300;
+}

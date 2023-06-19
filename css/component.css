@@ -1,14 +1,105 @@
+.flex-row, .flex-col {
+    display: flex !important;
+    justify-content: flex-start;
+}
+
+.flex-row > *, .flex-col > * {
+    display: block;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.plead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
 .container {
     width: min(94vw, 1320px);
     margin: 0 auto;
     padding: 0 0.75rem;
 }
 
+.dropdown-toggler {
+    position: relative;
+}
+
+.dropdown-toggler-container {
+    cursor: pointer;
+}
+
+.dropdown-toggler-container > span {
+    margin-right: 0.5rem;
+}
+
+.dropdown-menu {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+}
+
+.dropdown-menu.right {
+    left: auto;
+    right: 0;
+}
+
+.dropdown-item, .dropdown-header {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0;
+    border-top: 1px solid #000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    position: static;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #122;
+    background-color: #eee;
+}
+
 .btn {
     cursor: pointer;
     color: #fff;
-    background-color: #06f;
-    border: 1px solid #06f;
+    background-color: #823;
+    border: 1px solid #823;
     text-decoration: none;
     padding: 0.5rem 1.5rem;
     line-height: 1.5;
@@ -18,18 +109,28 @@
 
 .btn.secondary {
     background-color: #fff;
-    border-color: #fff;
-    color: #06f;
-} 
+    border-color: #823;
+    color: #823;
+}
+
+.btn.small {
+    padding: 0.475rem 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+}
 
 .navbar {
     padding: 0.8125rem 1.50rem;
-    background-color: #eee;
+    border-top: 1px solid #bba;
+    border-bottom: 1px solid #bba;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 2rem;
+}
+
+.navbar * {
+    color: #665;
 }
 
 .navbar-brand {
@@ -39,7 +140,15 @@
     white-space: nowrap;
     display: flex;
     align-items: center;
-    gap: 0 0.5rem;
+}
+
+.navbar-brand > span {
+    color: #000;
+}
+
+.navbar-brand > svg, .navbar-brand > img {
+    height: 2rem;
+    margin-right: 0.5rem;
 }
 
 .navbar-toggler {
@@ -50,7 +159,6 @@
     height: 0;
     display: none;
     flex: 1 0 100%;
-    overflow: hidden;
     -webkit-transition: height 0.35s ease;
     -moz-transition: height 0.35s ease;
     -ms-transition: height 0.35s ease;
@@ -61,7 +169,8 @@
 
 .navbar-collapse.show {
     display: flex;
-  }
+    overflow: hidden;
+}
 
 .nav-link {
     padding: 0.5rem;
@@ -73,17 +182,31 @@
 }
 
 .hero-background {
-    background-color: #fff;
-    background: url(../assets/jpg/school-kids.jpg) center center no-repeat scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/jpg/hero-image.jpeg) center center no-repeat scroll;
     background-size: cover;
     overflow: hidden;
-    text-align: center;
+}
+
+.hero-background-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/jpg/hero-image-2.jpeg) center center no-repeat scroll;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-background-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/jpg/hero-image-3.jpeg) center center no-repeat scroll;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.carousel.hero-carousel {
+    padding: 0;
 }
 
 .hero {
-    padding: 3rem 0.75rem;
-    display: flex;
-    flex-direction: column;
+    padding: 3rem 15%;
+    justify-content: flex-end;
+    height: 30rem;
 }
 
 .hero-brand-icon {
@@ -106,8 +229,26 @@
 .hero-button-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 0.5rem;
+}
+
+.jumbotron {
+    padding: 4rem 2rem;
+}
+
+.colored {
+    background-color: #823;
+    color: #fff;
+}
+
+.colored .btn.secondary {
+    color: #823;
+    border-color: transparent;
+}
+
+.display {
+    font-size: 4.5rem;
+    font-weight: 300;
 }
 
 .featured {
@@ -119,23 +260,47 @@
     border-bottom: 1px solid #ddd;
 }
 
-.featured-grid {
+.grid {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 3rem 0;
+}
+
+.featured-grid {
+    padding: 3rem 0.75rem;
     gap: 1.5rem;
 }
 
+.featured-no-carousel {
+    gap: 2rem;
+}
+
 .feature {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start
+}
+
+.feature.card {
+    min-width: 0;
+    background-color: #fff;
+    border: 1px solid #bba;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.card > img {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+    padding: 1.25rem;
 }
 
 .feature-icon-container {
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #06f;
+    background-color: #823;
     border-radius: 0.75rem;
 }
 
@@ -143,6 +308,16 @@
     display: flex;
     align-items: center;
     gap: 0 0.125rem;
+}
+
+.featured .prev-button, .featured .next-button {
+    margin-bottom: 0;
+    fill: #000;
+}
+
+.featured .carousel {
+    padding-top: 0;
+    padding-bottom: 2rem;
 }
 
 .carousel {
@@ -204,8 +379,18 @@
     cursor: pointer;
 }
 
+.split-grid {
+    padding: 3rem 0;
+    /* text-align: center; */
+    gap: 1rem;
+}
+
 footer {
-    background-color: #eee !important;
+    background-color: #665;
+}
+
+.footer-item > * {
+    color: #fff;
 }
 
 .footer-grid {
@@ -227,8 +412,24 @@ footer {
     align-items: flex-start
 }
 
-.footer-item > a{
+.footer-item > a {
     display: block;
     text-decoration: none;
     margin-bottom: 0.5rem;
+}
+
+.universal-nav > * {
+    margin: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.01rem;
+    text-decoration: none;
+    color: #222;
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #222;
+    border-radius: 50%;
+    flex: 0 0 auto;
 }
